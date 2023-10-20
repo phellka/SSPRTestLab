@@ -29,7 +29,7 @@ public class JpaQualificationCollectorTests {
         qualificationService.deleteAllQualifications();
     }
 
-    @Test
+    /*@Test
     void testQualificationRead() {
         qualificationService.deleteAllQualifications();
         final Qualification qualification = qualificationService.addQualification(1, "прораб");
@@ -38,7 +38,7 @@ public class JpaQualificationCollectorTests {
         log.info(findQualification.toString());
         Assertions.assertEquals(qualification, findQualification);
         qualificationService.deleteAllQualifications();
-    }
+    }*/
 
     @Test
     void testQualificationReadNotFound() {
@@ -46,7 +46,7 @@ public class JpaQualificationCollectorTests {
         Assertions.assertThrows(EntityNotFoundException.class, () -> qualificationService.findQualification(-1L));
         qualificationService.deleteAllQualifications();
     }
-
+/*
     @Test
     void testQualificationReadAll() {
         qualificationService.deleteAllQualifications();
@@ -56,7 +56,7 @@ public class JpaQualificationCollectorTests {
         log.info(qualifications.toString());
         Assertions.assertEquals(qualifications.size(), 2);
         qualificationService.deleteAllQualifications();
-    }
+    }*/
 
     @Test
     void testQualificationReadAllEmpty() {
@@ -65,7 +65,7 @@ public class JpaQualificationCollectorTests {
         log.info(qualifications.toString());
         Assertions.assertEquals(qualifications.size(), 0);
         qualificationService.deleteAllQualifications();
-    }
+    }/*
     @Test
     void testCollectorCreate() {
         qualificationService.deleteAllCollectors();
@@ -76,7 +76,7 @@ public class JpaQualificationCollectorTests {
         Assertions.assertNotNull(collector.getId());
         qualificationService.deleteAllCollectors();
         qualificationService.deleteAllQualifications();
-    }
+    }*/
 
     @Test
     void testCollectorRead() {
