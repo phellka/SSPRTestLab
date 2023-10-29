@@ -20,7 +20,7 @@ pipeline {
         }
         stage("Create Docker Image") {
             steps {
-                bat 'docker image build -t phellka1/app
+                bat 'docker image build -t phellka1/app .'
             }
         }
         stage("Push Image To Docker Hub") {
