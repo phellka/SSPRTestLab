@@ -31,5 +31,6 @@ pipeline {
                     bat 'docker push phellka1/app'
                 }
             }
+        }
     }
 }
